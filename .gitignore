@@ -1,0 +1,31 @@
+# --- Python Internals ---
+# These are compiled files that Python creates automatically. You don't need them.
+__pycache__/
+*.pyc
+**/__pycache__/
+
+# --- Virtual Environment ---
+# NEVER push this. It is huge and specific to your machine.
+venv/
+env/
+
+# --- Security (CRITICAL) ---
+# Ignores your environment variables (passwords, API keys, DB URLs).
+.env
+**/.env
+
+# --- Mac System Files ---
+# Junk file that Mac Finder creates.
+.DS_Store
+.vscode/
+.cph/
+
+# --- Database & Scratchpad Files ---
+# You usually don't want to push raw SQL dumps or session history.
+# Keep your migrations in 'alembic/' instead.
+*.sql
+*.session.sql
+
+# --- IDE Settings (Optional) ---
+# Ignores VS Code local settings folder
+.vscode/
